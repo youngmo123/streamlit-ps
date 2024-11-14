@@ -108,10 +108,33 @@ streamlit run Meeting_Summary/st_MS_ver3_Prompt.py
 
 # Streamlit Cloud Deployment 
 ## Custom 챗봇 앱 실행 확인
-streamlit run custom_chatbot/st_chatbot_ver4_RAG2.py
+
 ## Quick Start URL 확인
 https://docs.streamlit.io/deploy/streamlit-community-cloud/get-started/quickstart
 ## 개발 환경에서 git 연동 및 push
+ - 권한 부여 (터미널)
+ git config --global --add safe.directory /workspaces/202411_Streamlit_LangChain
+ - 로그인
+ git config --global user.email "you@example.com"
+ git config --global user.name "Your Name"
+ - git 연동
+ git remote add origin https://github.com/qruse/st_app_cloud.git
+ - 파일 확인
+ git status
+ - 파일 추가
+ git add .
+ - git 커밋(업데이트 시 메시지 표시)
+ git commit -m "first commit"
+ - branch 설정(독립 작업 환경 설정)
+ git branch -M main
+ - git에 디렉토리 업로드
+ git push -u origin main
+## 개발환경에서 앱 실행 후 deploy 버튼 눌러서 편리하게 배포 가능
+streamlit run custom_chatbot/st_chatbot_ver4_RAG2.py
+## 아래 URL에서 앱 setting에서 secre_key 등록
+https://share.streamlit.io/
+## test2
+streamlit run Energy_Optimization/st_EO_ver5_Reporting.py
 
 
 # Next Step..!
